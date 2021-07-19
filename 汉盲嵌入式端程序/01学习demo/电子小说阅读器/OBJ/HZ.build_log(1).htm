@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ming Administrator, ming, LIC=IK1BF-6NN9K-IIX5V-P54LQ-63JTT-HCM3N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\software\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\电子小说阅读器\源代码\电子小说阅读器\USER\READ.uvprojx
+Project File Date:  12/07/2020
+
+<h2>Output:</h2>
+Build target 'READER'
+compiling main.c...
+main.c(242): warning:  #223-D: function "mf_open" declared implicitly
+        res=mf_open((char *)spr_name,FA_READ);//只读打开
+main.c(255): warning:  #223-D: function "mf_lseek" declared implicitly
+        mf_lseek(page_offset[page%1000]);//得到初始偏移
+main.c(436): warning:  #223-D: function "mf_open" declared implicitly
+                        if(mf_open(spr_buf,FA_OPEN_EXISTING)==FR_OK)
+main.c(437): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+                                ai_load_picfile(spr_buf,60,100,150,250,1);      //显示图片1
+main.c(450): warning:  #223-D: function "mf_open" declared implicitly
+                        if(mf_open(spr_buf,FA_OPEN_EXISTING)==FR_OK)
+main.c(451): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+                                ai_load_picfile(spr_buf,280,100,150,250,1);
+main.c(466): warning:  #223-D: function "mf_open" declared implicitly
+                        if(mf_open(spr_buf,FA_OPEN_EXISTING)==FR_OK)
+main.c(467): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+                                ai_load_picfile(spr_buf,60,450,150,250,1);//显示图片3
+main.c(481): warning:  #223-D: function "mf_open" declared implicitly
+                        if(mf_open(spr_buf,FA_OPEN_EXISTING)==FR_OK)
+main.c(482): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+                                ai_load_picfile(spr_buf,280,450,150,250,1);//显示图片4
+main.c(691): warning:  #940-D: missing return statement at end of non-void function "lcd_dis_files"
+  }
+main.c(705): warning:  #223-D: function "mf_lseek" declared implicitly
+        mf_lseek(0);
+main.c(811): warning:  #223-D: function "mf_lseek" declared implicitly
+        res=mf_lseek(data_offset);//偏移更新
+main.c(948): warning:  #170-D: pointer points outside of underlying object
+                        if(strncmp(txt_pathname[key-1]-4+strlen(txt_pathname[key-1]),".txt",4)==0)
+main.c(996): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                if(strcmp(path,txt_path_name[i])==0)
+main.c(996): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                if(strcmp(path,txt_path_name[i])==0)
+main.c(1000): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                                strcpy(txt_path_name[j],txt_path_name[j+1]);
+main.c(1000): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+                                strcpy(txt_path_name[j],txt_path_name[j+1]);
+main.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=98708 RO-data=10236 RW-data=1080 ZI-data=1234936  
+FromELF: creating hex file...
+"..\OBJ\HZ.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\电子小说阅读器\源代码\电子小说阅读器\USER\RTE
+  D:\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

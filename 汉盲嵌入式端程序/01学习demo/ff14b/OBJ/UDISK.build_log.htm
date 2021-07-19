@@ -1,0 +1,166 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1010186930@qq.com, 1, LIC=MPPLD-8E560-X7KRZ-JMAZ4-F38T7-06MRV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\实验室\1. 实验室内容\汉盲嵌入式端程序\01学习demo\ff14b\USER\UDISK.uvprojx
+Project File Date:  05/13/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'UDISK'
+compiling ff.c...
+..\FATFS\src\ff.c(6910): error:  #20: identifier "LONGLONG" is undefined
+  			v = (QWORD)va_arg(arp, LONGLONG);
+..\FATFS\src\ff.c(6913): error:  #20: identifier "LONGLONG" is undefined
+  				v = (tc == 'd') ? (QWORD)(LONGLONG)va_arg(arp, long) : (QWORD)va_arg(arp, unsigned long);
+..\FATFS\src\ff.c(6913): error:  #53: expected a ":"
+  				v = (tc == 'd') ? (QWORD)(LONGLONG)va_arg(arp, long) : (QWORD)va_arg(arp, unsigned long);
+..\FATFS\src\ff.c(6915): error:  #20: identifier "LONGLONG" is undefined
+  				v = (tc == 'd') ? (QWORD)(LONGLONG)va_arg(arp, int) : (QWORD)va_arg(arp, unsigned int);
+..\FATFS\src\ff.c(6915): error:  #53: expected a ":"
+  				v = (tc == 'd') ? (QWORD)(LONGLONG)va_arg(arp, int) : (QWORD)va_arg(arp, unsigned int);
+..\FATFS\src\ff.c: 0 warnings, 5 errors
+compiling readwrite.c...
+..\FATFS\src\diskio.h(16): error:  #20: identifier "BYTE" is undefined
+  typedef BYTE	DSTATUS;
+..\FATFS\src\diskio.h(32): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_initialize (BYTE pdrv);
+..\FATFS\src\diskio.h(33): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_status (BYTE pdrv);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\HARDWARE\READWRITE\readwrite.c(30): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	length=strlen(readbuf);
+..\HARDWARE\READWRITE\readwrite.c(83): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  					res = f_write(fil,buf,strlen(buf),&bw);
+..\HARDWARE\READWRITE\readwrite.c(87): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				while (bw <strlen(buf));
+..\HARDWARE\READWRITE\readwrite.c: 3 warnings, 13 errors
+compiling exti.c...
+..\FATFS\src\diskio.h(16): error:  #20: identifier "BYTE" is undefined
+  typedef BYTE	DSTATUS;
+..\FATFS\src\diskio.h(32): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_initialize (BYTE pdrv);
+..\FATFS\src\diskio.h(33): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_status (BYTE pdrv);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\HARDWARE\EXTI\exti.c: 0 warnings, 13 errors
+compiling exfuns.c...
+..\FATFS\exfuns\exfuns.c(39): error:  #20: identifier "_VOLUMES" is undefined
+  FATFS *fs[_VOLUMES];//逻辑磁盘工作区.	 
+..\FATFS\exfuns\exfuns.c(133): error:  #136: struct "<unnamed>"  has no field "ssize"
+  		tot_sect*=fs1->ssize/512;
+..\FATFS\exfuns\exfuns.c(134): error:  #136: struct "<unnamed>"  has no field "ssize"
+  		fre_sect*=fs1->ssize/512;
+..\FATFS\exfuns\exfuns.c: 0 warnings, 3 errors
+compiling fattester.c...
+..\FATFS\exfuns\fattester.c(231): error:  #147-D: declaration is incompatible with "u8 mf_fmkfs(u8 *, u8, u16)"  (declared at line 32 of "..\FATFS\exfuns\fattester.h")
+  u8 mf_fmkfs(u8* path,u8 mode,u16 au,UINT len)
+..\FATFS\exfuns\fattester.c(233): error:  #167: argument of type "u8" is incompatible with parameter of type "const MKFS_PARM *"
+  	return f_mkfs((const TCHAR*)path,mode,au,len);//格式化,drv:盘符;mode:模式;au:簇大小
+..\FATFS\exfuns\fattester.c(233): error:  #167: argument of type "u16" is incompatible with parameter of type "void *"
+  	return f_mkfs((const TCHAR*)path,mode,au,len);//格式化,drv:盘符;mode:模式;au:簇大小
+..\FATFS\exfuns\fattester.c: 0 warnings, 3 errors
+compiling diskio.c...
+..\FATFS\src\diskio.h(16): error:  #20: identifier "BYTE" is undefined
+  typedef BYTE	DSTATUS;
+..\FATFS\src\diskio.h(32): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_initialize (BYTE pdrv);
+..\FATFS\src\diskio.h(33): error:  #20: identifier "BYTE" is undefined
+  DSTATUS disk_status (BYTE pdrv);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(34): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_read (BYTE pdrv, BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "DWORD" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(35): error:  #20: identifier "UINT" is undefined
+  DRESULT disk_write (BYTE pdrv, const BYTE* buff, DWORD sector, UINT count);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\FATFS\src\diskio.h(36): error:  #20: identifier "BYTE" is undefined
+  DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
+..\FATFS\src\diskio.c: 0 warnings, 13 errors
+compiling main.c...
+"..\OBJ\UDISK.axf" - 50 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

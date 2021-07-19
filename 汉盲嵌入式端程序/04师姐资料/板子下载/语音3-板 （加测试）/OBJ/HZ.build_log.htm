@@ -1,0 +1,232 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: WDX ALIENTEK, WDX, LIC=Z3C01-CK720-REIH3-AS3ZX-UMX31-0S9PV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+G:\2018ä����\ά\��������\����3-�� ���Ӳ��ԣ�\USER\HTB.uvprojx
+Project File Date:  04/23/2019
+
+<h2>Output:</h2>
+Rebuild target 'HTB'
+compiling main.c...
+main.c(160): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+                                           SPeech(initmenu[keyi]);   //���÷�������������ָ���������� 
+main.c(170): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+         SPeech(testmenu[keyt-1]);   //���÷�������������ָ����������  
+main.c(177): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+                                                 SPeech(novelmenu[keyf-1]);   //���÷�������������ָ���������� 
+main.c(253): warning:  #223-D: function "dis" declared implicitly
+                dis(0);
+main.c(308): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+        SPeech(list[cata_page*One_num+cata_num]);
+main.c(329): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  SPeech(list[cata_page*One_num+cata_num]);                     
+main.c(355): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+                                                         SPeech(initmenu[keyi]);   //���÷�������������ָ���������� 
+main.c(365): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+                                                 SPeech(testmenu[keyt-1]);   //���÷�������������ָ���������� 
+main.c(375): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+                                                 SPeech(novelmenu[keyf-1]);   //���÷�������������ָ���������� 
+main.c(472): warning:  #223-D: function "dis" declared implicitly
+        dis(1);          
+main.c(556): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+        SPeech((u8 *)PMbuf); 
+main.c(616): warning:  #223-D: function "LCD_WShowBraille" declared implicitly
+  LCD_WShowBraille(30,240,FCbtmp);
+main.c(617): warning:  #223-D: function "DX_FCBraille" declared implicitly
+                DX_FCBraille(FCbtmp);
+main.c(673): warning:  #223-D: function "dis" declared implicitly
+        dis(0);
+main.c: 14 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling led.c...
+compiling key.c...
+compiling lcd.c...
+compiling spi.c...
+compiling w25qxx.c...
+compiling sdio_sdcard.c...
+compiling suocun.c...
+..\HARDWARE\SUOCUN\suocun.c(104): warning:  #223-D: function "strncpy" declared implicitly
+                         strncpy(ts[0],tbtmp[i],6);
+..\HARDWARE\SUOCUN\suocun.c(123): warning:  #174-D: expression has no effect
+                 tbtmp[i]==tbtmp[i];
+..\HARDWARE\SUOCUN\suocun.c(126): warning:  #223-D: function "strncpy" declared implicitly
+  strncpy(gdtmp,tbtmp[count_s],8);//一个周期内的第一组转换，复制btmp[count_s]的前8�?完成第一组数据输出点采集               //据说memcpy效率高，可复制中间包�?\0'的数据，strncpy好了吗只能复制字符串，strncpy，memcpy有可能出现内存重叠情况，程序出错可以考虑修改为memmove                      
+..\HARDWARE\SUOCUN\suocun.c(128): warning:  #223-D: function "reverse" declared implicitly
+                reverse(gdtmp);//字符串倒转，用于计算机存储正确点位序列                                                                                                                                                                              盲文点列�?~8�?�?为下一方的1�?）排列书写的顺序(低位在前高位在后)与对应D0~D7的赋值在数位上（从高到底）相反，所以倒转序列适应锁存器输�?               ^
+..\HARDWARE\SUOCUN\suocun.c(129): warning:  #223-D: function "binary" declared implicitly
+                dx[3*count_s/2]=binary(gdtmp);//二进制字符串转十进制整型数，存于点显数组第一个元素中，用于I/O口赋�?                             ^
+..\HARDWARE\SUOCUN\suocun.c(130): warning:  #223-D: function "memset" declared implicitly
+                memset(gdtmp,'\0',sizeof(gdtmp));//完成一次存储操作后，将过渡数组清零。以采集第二�?             ^
+..\HARDWARE\SUOCUN\suocun.c(132): warning:  #223-D: function "strncat" declared implicitly
+                strncat(gdtmp,tbtmp[count_s+1],4);//再添加第二组盲文点列的前4个点序。完成第二组数据输出点的采集�?                 ^
+..\HARDWARE\SUOCUN\suocun.c(137): warning:  #223-D: function "strcpy" declared implicitly
+                strcpy(gdtmp,tbtmp[count_s+1]+4);//复制第二组盲文点列后9�?包含\0)点列�?                                                                                         灵活运用strcpy中的所要拷贝的字符串的首地址(地址btmp[count_s+1]+4为第二组盲文点列�?�?�?位开始计�?的地址，即�?�?包含\0)点列的起始地址)，并已补上\0�?            ^
+..\HARDWARE\SUOCUN\suocun.c(63): warning:  #177-D: variable "x2" was declared but never referenced
+         int i,j,a,b,m,n,x1,x2,y,l,k;
+..\HARDWARE\SUOCUN\suocun.c(63): warning:  #177-D: variable "l" was declared but never referenced
+         int i,j,a,b,m,n,x1,x2,y,l,k;
+..\HARDWARE\SUOCUN\suocun.c(183): warning:  #223-D: function "strncpy" declared implicitly
+                        strncpy(gdtmp,tbtmp[count_s],6);
+..\HARDWARE\SUOCUN\suocun.c(184): warning:  #223-D: function "strncat" declared implicitly
+                        strncat(gdtmp,tbtmp[count_s+1],2);
+..\HARDWARE\SUOCUN\suocun.c(186): warning:  #223-D: function "reverse" declared implicitly
+                        reverse(gdtmp);
+..\HARDWARE\SUOCUN\suocun.c(187): warning:  #223-D: function "binary" declared implicitly
+                        dx[i]=binary(gdtmp);
+..\HARDWARE\SUOCUN\suocun.c(188): warning:  #223-D: function "memset" declared implicitly
+                        memset(gdtmp,'\0',sizeof(gdtmp));
+..\HARDWARE\SUOCUN\suocun.c(151): warning:  #177-D: variable "ts" was declared but never referenced
+                 char gdtmp[9], ts[2][6]; 
+..\HARDWARE\SUOCUN\suocun.c(152): warning:  #177-D: variable "j" was declared but never referenced
+                int i1,i2 ,j,m,n,x,y,k,a,b,t;
+..\HARDWARE\SUOCUN\suocun.c(152): warning:  #177-D: variable "y" was declared but never referenced
+                int i1,i2 ,j,m,n,x,y,k,a,b,t;
+..\HARDWARE\SUOCUN\suocun.c(152): warning:  #177-D: variable "a" was declared but never referenced
+                int i1,i2 ,j,m,n,x,y,k,a,b,t;
+..\HARDWARE\SUOCUN\suocun.c(152): warning:  #177-D: variable "b" was declared but never referenced
+                int i1,i2 ,j,m,n,x,y,k,a,b,t;
+..\HARDWARE\SUOCUN\suocun.c(152): warning:  #177-D: variable "t" was declared but never referenced
+                int i1,i2 ,j,m,n,x,y,k,a,b,t;
+..\HARDWARE\SUOCUN\suocun.c(278): warning:  #223-D: function "delay_ms" declared implicitly
+                delay_ms(100);
+..\HARDWARE\SUOCUN\suocun.c(283): warning:  #223-D: function "delay_ms" declared implicitly
+                                delay_ms(100);
+..\HARDWARE\SUOCUN\suocun.c: 23 warnings, 0 errors
+compiling htptb.c...
+..\HARDWARE\HTPTB\htptb.c(742): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+               result = ptb(getcnchar(text));
+..\HARDWARE\HTPTB\htptb.c(745): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                 result = ftb(text);
+..\HARDWARE\HTPTB\htptb.c(751): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+              result=ftb(text);
+..\HARDWARE\HTPTB\htptb.c(777): warning:  #111-D: statement is unreachable
+  return NMF; break;
+..\HARDWARE\HTPTB\htptb.c(785): warning:  #111-D: statement is unreachable
+  return NMF; break;
+..\HARDWARE\HTPTB\htptb.c(796): warning:  #111-D: statement is unreachable
+  return NMF; break;
+..\HARDWARE\HTPTB\htptb.c(765): warning:  #177-D: variable "i" was declared but never referenced
+        int i=0,n=0,k=0,m=0,j;
+..\HARDWARE\HTPTB\htptb.c(765): warning:  #177-D: variable "n" was declared but never referenced
+        int i=0,n=0,k=0,m=0,j;
+..\HARDWARE\HTPTB\htptb.c(765): warning:  #177-D: variable "k" was declared but never referenced
+        int i=0,n=0,k=0,m=0,j;
+..\HARDWARE\HTPTB\htptb.c(765): warning:  #177-D: variable "m" was declared but never referenced
+        int i=0,n=0,k=0,m=0,j;
+..\HARDWARE\HTPTB\htptb.c(765): warning:  #177-D: variable "j" was declared but never referenced
+        int i=0,n=0,k=0,m=0,j;
+..\HARDWARE\HTPTB\htptb.c(871): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                        {               strcpy(czhz,text1);
+..\HARDWARE\HTPTB\htptb.c(871): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                        {               strcpy(czhz,text1);
+..\HARDWARE\HTPTB\htptb.c(874): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                {result=ptb(getcnchar(text1));
+..\HARDWARE\HTPTB\htptb.c(886): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                {        strncat(czhz,text2,2);
+..\HARDWARE\HTPTB\htptb.c(886): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                {        strncat(czhz,text2,2);
+..\HARDWARE\HTPTB\htptb.c(893): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                                        if(strcmp(czhz,czcpy))
+..\HARDWARE\HTPTB\htptb.c(897): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                                result=ptb(getcnchar(text1)); 
+..\HARDWARE\HTPTB\htptb.c(929): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                {        strncat(czhz,text3,2);
+..\HARDWARE\HTPTB\htptb.c(929): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                {        strncat(czhz,text3,2);
+..\HARDWARE\HTPTB\htptb.c(934): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                                        if(strcmp(czhz,czcpy))
+..\HARDWARE\HTPTB\htptb.c(938): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                                        strncat(text1,text2,2);
+..\HARDWARE\HTPTB\htptb.c(938): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                        strncat(text1,text2,2);
+..\HARDWARE\HTPTB\htptb.c(973): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                {        strncat(czhz,text4,2);
+..\HARDWARE\HTPTB\htptb.c(973): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                {        strncat(czhz,text4,2);
+..\HARDWARE\HTPTB\htptb.c(977): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                                        if(strcmp(czhz,czhzstring))
+..\HARDWARE\HTPTB\htptb.c(981): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                                strncat(text1,text2,2);
+..\HARDWARE\HTPTB\htptb.c(981): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                strncat(text1,text2,2);
+..\HARDWARE\HTPTB\htptb.c(982): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                                        strncat(text1,text3,2);
+..\HARDWARE\HTPTB\htptb.c(982): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                        strncat(text1,text3,2);
+..\HARDWARE\HTPTB\htptb.c(1035): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                result=ftb(text4);
+..\HARDWARE\HTPTB\htptb.c(1060): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                result=ftb(text3);
+..\HARDWARE\HTPTB\htptb.c(1075): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                result = ptb(getcnchar(text1)); 
+..\HARDWARE\HTPTB\htptb.c(1085): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                result=ftb(text2);
+..\HARDWARE\HTPTB\htptb.c(1099): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                                { result = ftb(text1); 
+..\HARDWARE\HTPTB\htptb.c(843): warning:  #177-D: variable "Nresult" was declared but never referenced
+         char Nresult[50]="";
+..\HARDWARE\HTPTB\htptb.c(833): warning:  #177-D: variable "nb" was declared but never referenced
+    char nb[10][13]={""};
+..\HARDWARE\HTPTB\htptb.c: 37 warnings, 0 errors
+compiling TTS.c...
+..\HARDWARE\TTS\TTS.c(43): warning:  #9-D: nested comment is not allowed
+      /****/     
+..\HARDWARE\TTS\TTS.c(96): warning:  #223-D: function "strlen" declared implicitly
+        buflen=strlen(buf);
+..\HARDWARE\TTS\TTS.c(105): warning:  #223-D: function "memcpy" declared implicitly
+        memcpy(&len[5],buf,buflen);
+..\HARDWARE\TTS\TTS.c: 3 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_dma.c...
+compiling malloc.c...
+compiling diskio.c...
+compiling ff.c...
+compiling exfuns.c...
+compiling mycc936.c...
+compiling fontupd.c...
+compiling text.c...
+linking...
+Program Size: Code=45564 RO-data=13580 RW-data=484 ZI-data=64208  
+FromELF: creating hex file...
+"..\OBJ\HZ.axf" - 0 Error(s), 77 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  G:\2018ä����\ά\��������\����3-�� ���Ӳ��ԣ�\USER\RTE
+  D:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

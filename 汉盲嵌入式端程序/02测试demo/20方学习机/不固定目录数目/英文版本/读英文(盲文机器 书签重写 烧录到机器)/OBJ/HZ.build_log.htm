@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1010186930@qq.com, 1, LIC=HN0AR-KQU0Z-01ZP1-C0PKJ-R97M1-TKGP6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\10101\Desktop\读英文(盲文机器 书签重写 烧录到机器)\USER\HTB.uvprojx
+Project File Date:  04/21/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'HTB'
+compiling main.c...
+main.c(33): warning:  #1295-D: Deprecated declaration display_Bookmark - give arg types
+  int display_Bookmark();//遍历出所有的.c文件并且按照书签1~10的顺序排序
+main.c(48): warning:  #1295-D: Deprecated declaration k2_event - give arg types
+  u8 k2_event();
+main.c(56): warning:  #1295-D: Deprecated declaration k4_event - give arg types
+  void k4_event();
+main.c(57): warning:  #1295-D: Deprecated declaration k5_event - give arg types
+  void k5_event();
+main.c(58): warning:  #1295-D: Deprecated declaration k6_event - give arg types
+  void k6_event();
+main.c(65): warning:  #1295-D: Deprecated declaration dis_txt - give arg types
+  void dis_txt();
+main.c(66): warning:  #1295-D: Deprecated declaration play - give arg types
+  void play();
+main.c(67): warning:  #1295-D: Deprecated declaration reco - give arg types
+  void reco();
+main.c(224): warning:  #223-D: function "dis" declared implicitly
+  			dis(0);
+main.c(229): warning:  #111-D: statement is unreachable
+  	return 0;
+main.c(82): warning:  #177-D: variable "res1"  was declared but never referenced
+  	FRESULT res1;
+main.c(84): warning:  #177-D: variable "menu"  was declared but never referenced
+  	u8 menu=0;
+main.c(391): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(391): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(366): warning:  #177-D: variable "buffer"  was declared but never referenced
+  	BYTE buffer[20*MAXSIZE]="";
+main.c(471): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(471): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(534): warning:  #188-D: enumerated type mixed with another type
+  	FRESULT res=0;
+main.c(584): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			strcpy(path_c,"书签10 ");
+main.c(593): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		else if(cnt2>=0&&cnt2<=MAXBK-1)
+main.c(598): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			strcat(path_c, bk);
+main.c(602): warning:  #42-D: operand types are incompatible ("char *" and "u8 *")
+  		strcpy((char*)bkname,q?q+3:pathp);//把数字和'/'去了
+main.c(604): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		strcat(path_c,bkname);
+main.c(604): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  		strcat(path_c,bkname);
+main.c(605): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		strcat(path_c,ext);//把书签文件换成.c扩展名
+main.c(613): warning:  #42-D: operand types are incompatible ("char *" and "u8 *")
+  	strcpy(fnt,p?p+1:pathp);
+main.c(613): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	strcpy(fnt,p?p+1:pathp);
+main.c(620): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	if(!strcmp(fnt,pathp))
+main.c(620): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	if(!strcmp(fnt,pathp))
+main.c(634): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(634): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  				strcpy((u8*)filename[i],(u8*)fn);
+main.c(635): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if(!strcmp(fnt,fn))
+main.c(635): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if(!strcmp(fnt,fn))
+main.c(539): warning:  #177-D: variable "patht"  was declared but never referenced
+  	u8*patht=0;
+main.c(550): warning:  #177-D: variable "cnt1"  was declared but never referenced
+  	u32 cnt1;//创建书签的次数
+main.c(553): warning:  #177-D: variable "index"  was declared but never referenced
+  	int index;//要新建的书签编号
+main.c(555): warning:  #177-D: variable "extension"  was declared but never referenced
+  	char extension[3]="";
+main.c(833): warning:  #223-D: function "DX_FCBraille" declared implicitly
+  	  DX_FCBraille(btmp);
+main.c(865): warning:  #188-D: enumerated type mixed with another type
+  				res=f_typetell(fn);	
+main.c(875): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  								strcpy(nameReplaced,"0:/");
+main.c(876): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  								strcat(nameReplaced,fn);
+main.c(876): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  								strcat(nameReplaced,fn);
+main.c(1065): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		strcat(path_c,bk);
+main.c(1073): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			strcat(path_c, bk);
+main.c(1076): warning:  #940-D: missing return statement at end of non-void function "path_Change" 
+  }
+main.c(1119): warning:  #188-D: enumerated type mixed with another type
+  			res=f_typetell(fn);	
+main.c(1123): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy((u8*)bookmarkname[line],processedname);
+main.c(1086): warning:  #177-D: variable "q"  was declared but never referenced
+  	char *q=NULL;
+main.c(1255): warning:  #177-D: variable "q"  was declared but never referenced
+  	char *q=NULL;
+main.c(1270): warning:  #177-D: variable "q"  was declared but never referenced
+  	char *q=NULL;
+main.c(1350): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  							strcpy(oldname[i],fn);
+main.c(1354): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  							strcpy(newname[i],fn);
+main.c(1391): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i = 0, j = -1;
+main.c(1454): warning:  #1-D: last line of file ends without a newline
+  }	
+main.c: 54 warnings, 0 errors
+linking...
+Program Size: Code=48088 RO-data=14292 RW-data=196 ZI-data=55952  
+FromELF: creating hex file...
+"..\OBJ\HZ.axf" - 0 Error(s), 54 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HTB
+  D:\Keil5\Keil5Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

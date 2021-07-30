@@ -1,0 +1,19 @@
+﻿  DictionaryTest.c
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(14,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(80,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(81,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(103,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(114,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(143,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(144,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(190,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\DictionaryTest\DictionaryTest\DictionaryTest.c(63): warning C4716: “DictionaryItemCount”: 必须返回一个值
+  DictionaryTest.vcxproj -> C:\Users\10101\Desktop\vsprj\DictionaryTest\Debug\DictionaryTest.exe

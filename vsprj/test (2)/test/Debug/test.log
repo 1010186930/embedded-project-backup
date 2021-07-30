@@ -1,0 +1,15 @@
+﻿  test.c
+C:\Users\10101\Desktop\test (2)\test\test.c(237,1): warning C4028: 形参 1 与声明不同
+C:\Users\10101\Desktop\test (2)\test\test.c(346,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\10101\Desktop\test (2)\test\test.c(349,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\10101\Desktop\test (2)\test\test.c(480,29): warning C4047: “!=”:“int”与“void *”的间接级别不同
+C:\Users\10101\Desktop\test (2)\test\test.c(528,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(602,19): warning C4047: “!=”:“int”与“void *”的间接级别不同
+C:\Users\10101\Desktop\test (2)\test\test.c(877,14): warning C4101: “m”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(877,23): warning C4101: “k”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(874,6): warning C4101: “count_s”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(876,7): warning C4101: “gdtmp”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(877,17): warning C4101: “n”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(875,6): warning C4101: “dx”: 未引用的局部变量
+C:\Users\10101\Desktop\test (2)\test\test.c(962,6): warning C4101: “l”: 未引用的局部变量
+  test.vcxproj -> C:\Users\10101\Desktop\test (2)\Debug\test.exe

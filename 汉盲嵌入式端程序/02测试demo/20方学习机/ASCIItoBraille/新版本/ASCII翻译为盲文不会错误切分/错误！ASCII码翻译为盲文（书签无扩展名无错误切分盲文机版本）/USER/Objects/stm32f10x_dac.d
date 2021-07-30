@@ -1,3 +1,0 @@
-.\objects\stm32f10x_dac.o: ..\STM32F10x_FWLib\src\stm32f10x_dac.c
-.\objects\stm32f10x_dac.o: ..\STM32F10x_FWLib\inc\stm32f10x_dac.h
-.\objects\stm32f10x_dac.o: ..\USER\stm32f10x.h

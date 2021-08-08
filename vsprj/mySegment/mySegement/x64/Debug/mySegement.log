@@ -1,0 +1,85 @@
+﻿  mySegmentation.c
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(129,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(458,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(459,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(460,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(474,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(475,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(476,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(497,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(498,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(499,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(504,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(505,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(506,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(509,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(510,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(511,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(580,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(651,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(651,9): warning C4313: “printf”: 格式字符串中的“%d”与“int *”类型的参数 1 冲突
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(662,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(662,9): warning C4313: “printf”: 格式字符串中的“%d”与“int *”类型的参数 1 冲突
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(666,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(666,9): warning C4313: “printf”: 格式字符串中的“%d”与“int *”类型的参数 1 冲突
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(715,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(716,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(850,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(851,1): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(266): message : 参见“strncat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(859,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(860,1): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(266): message : 参见“strncat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(868,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(869,1): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(266): message : 参见“strncat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(889,25): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12386,27): warning C4047: “!=”:“int”与“void *”的间接级别不同
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12720,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 参见“sprintf”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12721,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12800,16): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12816,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13108,40): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13129,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13148,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13151,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13190,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13220,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13239,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13242,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13090,6): warning C4101: “type_cnt”: 未引用的局部变量
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(72,24): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(99,24): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12316): warning C4715: “EncodeType”: 不是所有的控件路径都返回值
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13033): warning C4715: “UTF8_to_Unicode”: 不是所有的控件路径都返回值
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13084): warning C4716: “UnpackedDot”: 必须返回一个值
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13267): warning C4716: “Indentify_TextType”: 必须返回一个值
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(141): warning C4716: “String_Segmentation”: 必须返回一个值
+  mySegement.vcxproj -> C:\Users\10101\Desktop\vsprj\mySegment\x64\Debug\mySegement.exe

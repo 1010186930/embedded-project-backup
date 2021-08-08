@@ -2100,14 +2100,15 @@ int segWord ( unsigned char *strText  , int iWordLen , BOOL bChinese )//逆向匹配
 			for ( k=Lft , l=0 ; k<Lft+j ; k++, l++)  //逆向最大
 			strChar[l] = strText[k];
 			strChar[l] = '\0'; 
-			if ( 2 == j )  {	//单个汉字
-			strcpy((char*)SegWord[n++],(char*)strChar);
+			if ( 2 == j )  
+			{	//单个汉字
+				strcpy((char*)SegWord[n++],(char*)strChar);
 			//	addSegWord(strChar,2);
 //	result=ptb(getcnchar((char*)strChar));strcat(btmp,result);memset(result,'\0',sizeof(result));
 //	strncat(btmp, "000000", 6);//	printf("%s\n",strChar);
-							i -= 2 ;
-							temp+=j;
-							break;
+				i -= 2 ;
+				temp+=j;
+				break;
 			} 
 			bFound = searchWord(strChar , l );  //匹配词典
 			if ( TRUE == bFound )
@@ -2122,7 +2123,8 @@ int segWord ( unsigned char *strText  , int iWordLen , BOOL bChinese )//逆向匹配
 			/* memset(strPy,'\0',sizeof(strPy));*/
 				break; 
 			} 
-			else {			
+			else 
+			{			
 				//1.是否全是外来词
 				//2.是否全是数字
 				//3.如果第一二字是”姓氏“，则默认为姓名
@@ -2130,19 +2132,19 @@ int segWord ( unsigned char *strText  , int iWordLen , BOOL bChinese )//逆向匹配
 			}
 		} // end for j
 	} // end while $i > 0 */
-		for(n-=1;n>=0;n--)
-		{   
-			addSegWord(SegWord[n],strlen((char*)SegWord[n])); 
-			/*if(strlen((char*)SegWord[n])==2)
-			{ 	
-				HZ_br((char*)SegWord[n]); 
-			}
-			else  
-			{
-				CH_br((char*)SegWord[n]);
-			}*/
+	for(n-=1;n>=0;n--)
+	{   
+		addSegWord(SegWord[n],strlen((char*)SegWord[n])); 
+		/*if(strlen((char*)SegWord[n])==2)
+		{ 	
+			HZ_br((char*)SegWord[n]); 
 		}
-		return 0;
+		else  
+		{
+			CH_br((char*)SegWord[n]);
+		}*/
+	}
+	return 0;
 }
 
 void initSegList()//每段的分词链表
@@ -2256,123 +2258,145 @@ int segSentence (char *strText ,BOOL bSpace )
 	unsigned	char	strChar[3];	//
 	unsigned 	char	cChar;			//
 	char np[2]="";
-	
 	memset(strWord,0,sizeof(strWord));
 	strChar[0] = '\0';
-	  	for ( i = 0 ; i < iTextLen ; i ++ ) {
+	for ( i = 0 ; i < iTextLen ; i ++ )
+	{
 		cChar    = (unsigned char )strText[i];
-		if (128 > cChar) {					//英文字符
-			/****连续空格不算分隔 ****/
-				if ( ' ' == cChar || '\t' == cChar || '\r' == cChar || '\n' == cChar ){
-				if ( TRUE == bChinese ) {			//如果前面一个有效字符是Chinese
+		if (128 > cChar) 
+		{					//英文字符
+		/****连续空格不算分隔 ****/
+			if ( ' ' == cChar || '\t' == cChar || '\r' == cChar || '\n' == cChar )
+			{
+				if ( TRUE == bChinese ) 
+				{			//如果前面一个有效字符是Chinese
 					if ( TRUE == bSpace && (' ' == cChar || '\t' == cChar)) 
 						bSep = TRUE ;			
-					else continue ;				//继续取下一个字符，因为汉字的词可以换行或用空格隔开
-				} else  {
+					else 
+						continue ;				//继续取下一个字符，因为汉字的词可以换行或用空格隔开
+				} 
+				else  
+				{
 					bSep = TRUE ;
 				}
-			} else { 						
+			} 
+			else 
+			{ 						
 				bSymbol = isAsciiSymbol(cChar);	//判断是否是英文标点
 				bSep = bSymbol;
 			}     //确定bSep
-			if ( (TRUE == bSep || TRUE == bChinese ) &&  iWordLen >= 0 ) {			//一个单词结束
+			if ( (TRUE == bSep || TRUE == bChinese ) &&  iWordLen >= 0 )
+			{			//一个单词结束
 				if ( iWordLen > MAX_SWORD_LEN )
-					 iWordLen = MAX_SWORD_LEN;
+					iWordLen = MAX_SWORD_LEN;
 				strWord[iWordLen] = '\0';    //找到一句可以断开的话，对该句话进行分词
 				segWord(strWord,iWordLen,bChinese);
 				iWordLen = 0 ;
-				if ( bSymbol == TRUE ) {
+				if ( bSymbol == TRUE ) 
+				{
 					strWord[0] = cChar;
 					strWord[1] = '\0';
 					addSegWord(strWord,1);
-		/*result=ftb((char*)strWord);strcat(btmp,result);memset(result,'\0',sizeof(result));*/	
-									}   //对标点进行分隔输出
+	/*result=ftb((char*)strWord);strcat(btmp,result);memset(result,'\0',sizeof(result));*/	
+				}   //对标点进行分隔输出
 			} 
-			if ( FALSE == bSep ) {
+			if ( FALSE == bSep ) 
+			{
 				strWord[iWordLen] = cChar;
-							//同一个单词的字母,并在一起
+						//同一个单词的字母,并在一起
 				iWordLen ++ ;
 			}
 			bChinese = FALSE ;     //确定bChinese
-		} else {							//处理字符Chinese
-			if ( FALSE == bChinese && FALSE == bSep && 0 < iWordLen ) {//以前是英文，碰到汉字，就当英文单词结束
+		} 
+		else 
+		{							//处理字符Chinese
+			if ( FALSE == bChinese && FALSE == bSep && 0 < iWordLen ) 
+			{//以前是英文，碰到汉字，就当英文单词结束
 				if ( iWordLen > MAX_SWORD_LEN )
-					 iWordLen = MAX_SWORD_LEN;
+					iWordLen = MAX_SWORD_LEN;
 				strWord[iWordLen] = '\0';
 				bFound = isEnglishStop(strWord);
-				if ( FALSE == bFound ) { //对strWord拆开成单个字节再进行盲文转换
-		/*		    addSegWord(strWord,1);
-					for(j=0;j<strlen((char*)strWord);j++){ 
-							memcpy(np,strWord+j,1);			
-						result=ftb((char*)np);strcat(btmp,result);memset(result,'\0',sizeof(result));memset(np,'\0',sizeof(np));	}
-						strncat(btmp, "000000", 6); */
+				if ( FALSE == bFound ) 
+				{ //对strWord拆开成单个字节再进行盲文转换
+	/*		    addSegWord(strWord,1);
+				for(j=0;j<strlen((char*)strWord);j++){ 
+						memcpy(np,strWord+j,1);			
+					result=ftb((char*)np);strcat(btmp,result);memset(result,'\0',sizeof(result));memset(np,'\0',sizeof(np));	}
+					strncat(btmp, "000000", 6); */
 					segWord(strWord,iWordLen,bChinese);
-							} // end if 
+				} // end if 
 				iWordLen = 0 ;
 			} 
-
 			iNexti	= i + 1 ;
-			if ( iNexti <  iTextLen ) {
-				if ( 128 > ((unsigned char)strText[iNexti]) ) {		//单字符<=128，不处理该字符
+			if ( iNexti <  iTextLen ) 
+			{
+				if ( 128 > ((unsigned char)strText[iNexti]) )
+				{		//单字符<=128，不处理该字符
 					continue ;					
 				}
-			} else {						//最后一个字符是大于128的单字符
+			} 
+			else 
+			{						//最后一个字符是大于128的单字符
 				break;
 			}
-			
 			strChar[0] = strText[i];
 			strChar[1] = strText[i+1];
 			strChar[2] = '\0';
 						//是否有可能>128的字符，只有一个字符，如果有需要另外判断，现在默认一定会有至少两个字符同时出现
 			bChinese	= TRUE ;				//是汉字Chinese
 			i ++ ;						//只需要加1
-			
-			if (strChar[0] == 0xa1 && strChar[1] == 0xa1 ) {				//Chinese空格,16进制:A1,A1
+			if (strChar[0] == 0xa1 && strChar[1] == 0xa1 ) 
+			{				//Chinese空格,16进制:A1,A1
 				if ( TRUE == bSpace )
 					bSep = TRUE ;
 				else continue ;					//连续Chinese空格
-			}else if ( strChar[0] < 176 ) {//中文标点等非汉字字符
+			}
+			else if ( strChar[0] < 176 ) 
+			{//中文标点等非汉字字符
 				bSep = TRUE ;
 				bSymbol = TRUE ;
-			}else bSep = FALSE;
-			
-			if ( TRUE == bSep &&  iWordLen >= 0 ) {
+			}
+			else 
+				bSep = FALSE;
+			if ( TRUE == bSep &&  iWordLen >= 0 ) 
+			{
 				if ( iWordLen > MAX_SWORD_LEN )
-					 iWordLen = MAX_SWORD_LEN;
+					iWordLen = MAX_SWORD_LEN;
 				strWord[iWordLen] = '\0';
 				segWord(strWord,iWordLen,bChinese);
 				iWordLen = 0 ;
 				if ( bSymbol == TRUE )
 				{
 					addSegWord(strChar,2);
-					/*if(!strcmp((char*)strChar,"啅"))
-					{	
-						result=ptb(getcnchar((char*)strChar));
-						strcat(btmp,result);
-						memset(result,'\0',sizeof(result));
-						strncat(btmp, "000000", 6);
-					} 
-					else
-					{	
-						result=ftb((char*)strChar); 
-						strcat(btmp,result);
-						memset(result,'\0',sizeof(result));	
-					}				*/
+				/*if(!strcmp((char*)strChar,"啅"))
+				{	
+					result=ptb(getcnchar((char*)strChar));
+					strcat(btmp,result);
+					memset(result,'\0',sizeof(result));
+					strncat(btmp, "000000", 6);
+				} 
+				else
+				{	
+					result=ftb((char*)strChar); 
+					strcat(btmp,result);
+					memset(result,'\0',sizeof(result));	
+				}				*/
 				}   //对标点进行分隔输出
 			} 
-			if ( FALSE == bSep ) {
+			if ( FALSE == bSep ) 
+			{
 				strWord[iWordLen++] = strChar[0];
 				strWord[iWordLen++] = strChar[1];
 			}
 		} // end if ord
 	} // end for $i 
-	
-	if ( 0 < iWordLen ) {						//还有未处理的单词
+	if ( 0 < iWordLen ) 
+	{						//还有未处理的单词
 		if ( iWordLen > MAX_SWORD_LEN )
-			 iWordLen = MAX_SWORD_LEN;
+			iWordLen = MAX_SWORD_LEN;
 		strWord[iWordLen] = '\0';
 		segWord(strWord,iWordLen,bChinese);
-		iWordLen = 0 ;	
+		iWordLen = 0 ;
 	}
 	return 0;
 }
@@ -2419,7 +2443,7 @@ int main()//int argc,char *argv[])
 		//fgets(strText, 10001, fpIn);//i++;
 		/*strcpy(strText, "你好我叫林栋");
 		segSentence(strText, FALSE);*/
-	GBtoSegwithDot("阿布朗白昼地白煮");
+	GBtoSegwithDot("你好你，这里");
 		/*fwrite(SEG_LIST, WNUM_OUT, 1, fpfcOut);+		[0x00000010]	0x00712fe0 {{lstWord=0x00b2ec18 {strWord=0x00b2ec18 "阿比盖尔" strPY=0x00b2ec2b "屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯屯... ...} }, ...}	_CH_DICT[0x0000005a]
 
 		fputc('\n', fpfcOut);*/

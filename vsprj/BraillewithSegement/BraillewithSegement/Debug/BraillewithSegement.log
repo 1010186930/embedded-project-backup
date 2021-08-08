@@ -43,17 +43,17 @@ C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(202
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“strcat”的声明
 C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2048,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2104,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2105,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2117,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2118,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
 C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2059,65): warning C4101: “strChar3”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2059,53): warning C4101: “strChar2”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2059,41): warning C4101: “strChar1”: 未引用的局部变量
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2168,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2170,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2159,26): warning C4101: “lastChar”: 未引用的局部变量
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2159,16): warning C4101: “firstChar”: 未引用的局部变量
-C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2388,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2161,26): warning C4101: “lastChar”: 未引用的局部变量
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2161,16): warning C4101: “firstChar”: 未引用的局部变量
+C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(2412,6): warning C4101: “i”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\BraillewithSegement\BraillewithSegement\fenci.c(1712): warning C4715: “ftb”: 不是所有的控件路径都返回值
   BraillewithSegement.vcxproj -> C:\Users\10101\Desktop\vsprj\BraillewithSegement\Debug\BraillewithSegement.exe

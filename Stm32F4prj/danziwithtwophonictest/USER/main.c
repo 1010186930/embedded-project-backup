@@ -69,7 +69,7 @@ int main(void)
 	u32 fplace=0;
 	u8 *backbuf;
 	char buf[201] = "";
-	u8 gbktest[]="重量林栋长江S汬";
+	u8 gbktest[]="我感到一阵愉悦的颤抖";
 	unsigned short unicode[50] = {0x00};
 	unsigned char cnt;
     HAL_Init();                     //初始化HAL库   

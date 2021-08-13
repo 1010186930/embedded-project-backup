@@ -3,7 +3,7 @@
 #include "malloc.h"
 #define DANZI_ITEM	32
 #define max(a,b) ((a>=b)?a:b)
-char danzipath[] = ".\\Debug\\FlashTable.txt";
+char danzipath[] = ".\\Debug\\danzi.txt";
 char two_polyphonic_path[] = ".\\Debug\\polyphonictwo.txt";
 int DictionaryItemCount(const char* path)
 {
@@ -78,7 +78,7 @@ void DanziTranslate(unsigned short* uni, unsigned char len, char* dot,char* path
 		return ;
 	}
 	strcpy(pname, path);
-	fildanzi=fopen(pname, "r");
+	fildanzi=fopen(pname, "rb");
 	if (fildanzi == (FILE*)NULL) {
 		printf("open dict file error !\n");
 		return;
@@ -141,7 +141,7 @@ void TwoPloyphonicTranslate(unsigned short* uni, unsigned char len, char* dot, c
 		return;
 	}
 	strcpy(pname, path);
-	filtwopoly = fopen(pname, "r");
+	filtwopoly = fopen(pname, "rb");
 	if (filtwopoly == (FILE*)NULL) {
 		printf("open dict file error !\n");
 		return;

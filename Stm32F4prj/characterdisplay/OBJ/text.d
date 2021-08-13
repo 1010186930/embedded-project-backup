@@ -80,3 +80,4 @@
 ..\obj\text.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\text.o: ..\SYSTEM\usart\usart.h
 ..\obj\text.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\text.o: ..\HARDWARE\UTFTOUNI\touni.h

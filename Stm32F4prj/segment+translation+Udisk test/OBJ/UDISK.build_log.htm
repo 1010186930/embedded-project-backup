@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1010186930@qq.com, 1, LIC=MPPLD-8E560-X7KRZ-JMAZ4-F38T7-06MRV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\实验室\1. 实验室内容\汉盲嵌入式端程序\01学习demo\UTF-8读取\USER\UDISK.uvprojx
+Project File Date:  05/13/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'UDISK'
+compiling exti.c...
+..\HARDWARE\READWRITE\readwrite.h(11): warning:  #1295-D: Deprecated declaration Get_Parentdirectory - give arg types
+  u8 Get_Parentdirectory();
+..\HARDWARE\EXTI\exti.c: 1 warning, 0 errors
+compiling readwrite.c...
+..\HARDWARE\READWRITE\readwrite.h(11): warning:  #1295-D: Deprecated declaration Get_Parentdirectory - give arg types
+  u8 Get_Parentdirectory();
+..\HARDWARE\READWRITE\readwrite.c(35): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	length=strlen(readbuf);
+..\HARDWARE\READWRITE\readwrite.c(88): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  					res = f_write(fil,buf,strlen(buf),&bw);
+..\HARDWARE\READWRITE\readwrite.c(92): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				while (bw <strlen(buf));
+..\HARDWARE\READWRITE\readwrite.c(108): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	length=strlen(readbuf);
+..\HARDWARE\READWRITE\readwrite.c(286): warning:  #42-D: operand types are incompatible ("char *" and "u8 *")
+  	strcpy(fnt,p?p+1:pathp);
+..\HARDWARE\READWRITE\readwrite.c(286): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	strcpy(fnt,p?p+1:pathp);
+..\HARDWARE\READWRITE\readwrite.c(293): warning:  #1-D: last line of file ends without a newline
+  }	
+..\HARDWARE\READWRITE\readwrite.c(271): warning:  #177-D: variable "res"  was declared but never referenced
+  	u8 res=0;
+..\HARDWARE\READWRITE\readwrite.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=72598 RO-data=195190 RW-data=1356 ZI-data=33755044  
+FromELF: creating hex file...
+"..\OBJ\UDISK.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

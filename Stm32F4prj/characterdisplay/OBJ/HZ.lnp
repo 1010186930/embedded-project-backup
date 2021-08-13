@@ -39,6 +39,7 @@
 "..\obj\w25qxx.o"
 "..\obj\ftl.o"
 "..\obj\nand.o"
+"..\obj\touni.o"
 "..\obj\malloc.o"
 "..\obj\ff.o"
 "..\obj\diskio.o"

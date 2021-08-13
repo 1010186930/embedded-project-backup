@@ -13,9 +13,12 @@
 //Copyright(C) 广州市星翼电子科技有限公司 2014-2024
 //All rights reserved									  
 ////////////////////////////////////////////////////////////////////////////////// 	 
- 					     
 void Get_HzMat(unsigned char *code,unsigned char *mat,u8 size);			//得到汉字的点阵码
-void Show_Font(u16 x,u16 y,u8 *font,u8 size,u8 mode);					//在指定位置显示一个汉字
-void Show_Str(u16 x,u16 y,u16 width,u16 height,u8*str,u8 size,u8 mode);	//在指定位置显示一个字符串 
+void Show_GBKFont(u16 x,u16 y,u8 *font,u8 size,u8 mode);					//在指定位置显示一个汉字
+void Show_GBKStr(u16 x,u16 y,u16 width,u16 height,u8*str,u8 size,u8 mode);	//在指定位置显示一个字符串 
 void Show_Str_Mid(u16 x,u16 y,u8*str,u8 size,u8 len);
+void Get_UNIMat(u16 *code,unsigned char *mat,u8 size);
+void Show_UNIFont(u16 x,u16 y,u16 *font,u8 size,u8 mode);
+void Show_UNIStr(u16 x,u16 y,u16 width,u16 height,u16*str,u8 size,u8 mode);
+void Show_UTF8Str(u16 x,u16 y,u16 width,u16 height,u8* utfsrc, u16* unidst,u8 size,u8 len,u8 mode);
 #endif

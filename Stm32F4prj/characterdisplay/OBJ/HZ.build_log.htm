@@ -21,17 +21,30 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-D:\学习资料\1. 阿波罗STM32F429开发板\【正点原子】阿波罗STM32F429开发板资料 资料盘(A盘)\4，程序源码\2，标准例程-HAL库版本\实验42 汉字显示实验\USER\HZ.uvprojx
-Project File Date:  06/22/2021
+C:\Users\10101\Desktop\Stm32F4prj\characterdisplay\USER\HZ.uvprojx
+Project File Date:  08/09/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
 Build target 'HZ'
 compiling main.c...
-main.c(114): error:  #114: label "UPD"  was referenced but not defined
-  					if(key==KEY0_PRES)goto UPD;
-main.c: 0 warnings, 1 error
-"..\OBJ\HZ.axf" - 1 Error(s), 0 Warning(s).
+main.c(30): warning:  #177-D: variable "high"  was declared but never referenced
+  	u8 high;
+main.c(31): warning:  #177-D: variable "low"  was declared but never referenced
+  	u8 low;
+main.c(32): warning:  #177-D: variable "fontcnt"  was declared but never referenced
+  	u32 fontcnt;		  
+main.c(33): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i,j;
+main.c(33): warning:  #177-D: variable "j"  was declared but never referenced
+  	u8 i,j;
+main.c(34): warning:  #177-D: variable "fontx"  was declared but never referenced
+  	u8 fontx[2];                    //gbk码
+main.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=45364 RO-data=13856 RW-data=116 ZI-data=33750948  
+FromELF: creating hex file...
+"..\OBJ\HZ.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,8 +57,7 @@ Package Vendor: Keil
   D:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

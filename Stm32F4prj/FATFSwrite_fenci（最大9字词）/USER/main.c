@@ -55,6 +55,7 @@ __packed typedef struct
 	u32 f32addr;			//gbk32地址
 	u32 gbk32size;			//gbk32的大小 
 }_tbl_info; 
+u8 WriteSegDictionaryIntoNand(char *dst,char * src);
 u8 WriteTwoPolyIntoNand(char *dst,char * src);
 u8 Byte32WriteIntoNand(char *dst,char * src);
 u8 TestDanziInNand(char *path);
@@ -168,7 +169,8 @@ int main(void)
 //		printf("lut[%d]:%d\r\n",cnt,nand_dev.lut[cnt]);
 //	}
 ////	Byte32WriteIntoNand(danzi_dst,danzi_src);
-	WriteTwoPolyIntoNand(polyphonic_two_dst,polyphonic_two_src);
+//	WriteTwoPolyIntoNand(polyphonic_two_dst,polyphonic_two_src);
+WriteSegDictionaryIntoNand(segdictionary_dst,segdictionary_src);
 //	TestDanziInNand(danzi_dst);
 //	res=f_open(&fil2,"2:/danzitbl.txt",FA_READ);
 //	printf("danzi file open:%d\r\n",res);
@@ -455,9 +457,7 @@ u8 WriteSegDictionaryIntoNand(char *dst,char * src)
 	int current_itemcnt=0;
 	u8* pdstname;
 	u8* psrcname;
-	u32 dstfile_size=0;
 	u32 srcfile_size=0;
-	u32 dstfile_place=0;
 	u32 srcfile_place=0;
 	u32 write_times=0;
 	u32 read_times=0;
@@ -481,40 +481,31 @@ u8 WriteSegDictionaryIntoNand(char *dst,char * src)
 	{
 		while(srcfile_place!=srcfile_size)
 		{
-			if(seg_cntlast != seg_cnt)
-			{
-				printf("**********READ %d LENGTH ITEM**********\r\n",seg_cnt);
-				printf("read seg :%d,seg_cnt:%d\r\n",res_sd,seg_cnt);
-				current_itemcnt=0;
-			}
 			res_sd=f_read(&fil1,segdictionary,DANZI_ITEM,&br);
 			seg_cnt=Unicnt(segdictionary);
-			current_itemcnt++;
+			if(res_sd==0)
+				current_itemcnt++;
+			if((seg_cntlast != seg_cnt) && seg_cnt != 1)
+			{
+				printf("**********READ %d LENGTH ITEM**********\r\n",seg_cntlast);
+				printf("read segfile state :%d,seg_cnt:%d\r\n",res_sd,current_itemcnt - 1);
+				current_itemcnt=1;
+			}
 			Unidisplay(segdictionary, seg_cnt);
 			seg_cntlast=seg_cnt;
-			
 			if(res_sd!=0||br!=DANZI_ITEM)
 				break;
 			read_times++;
 			printf("read times:%d\r\n",read_times);
-			res_nand=f_write(&fil2,&unitmph,sizeof(unitmph),&br);
-			printf("write unitmph :%d\r\n",res_nand);
-			if(res_nand!=0||br!=sizeof(unitmph))
-				break;
-			res_nand=f_write(&fil2,&unitmpl,sizeof(unitmpl),&br);
-			printf("write unitmpl :%d\r\n",res_nand);
-			if(res_nand!=0||br!=sizeof(unitmpl))
-				break;
-			res_nand=f_write(&fil2,two_ployphonic_dot,DANZI_ITEM-4,&br);
-			printf("write two_ployphonic_dot :%d\r\n",res_nand);
-			if (res_nand || br < DANZI_ITEM-4) 
+			res_nand=f_write(&fil3,segdictionary,DANZI_ITEM,&bw);
+			if (res_nand || bw < DANZI_ITEM) 
 				break;	
 			write_times++;
 			printf("write times:%d\r\n",write_times);
 			srcfile_place=f_tell(&fil1);
 		}
 		f_close(&fil1);
-		f_close(&fil2);
+		f_close(&fil3);
 	}
 	myfree(SRAMIN,pdstname);
 	myfree(SRAMIN,psrcname);

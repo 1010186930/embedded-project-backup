@@ -88,16 +88,16 @@ D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : 参见“st
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(108,9): warning C4033: “UniInvercpy”必须返回值
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(445,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 参见“strncpy”的声明
-C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(462,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(453,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
-C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(463,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(454,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(441,6): warning C4101: “low”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(441,17): warning C4101: “baseaddress”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(441,11): warning C4101: “high”: 未引用的局部变量
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(12316): warning C4715: “EncodeType”: 不是所有的控件路径都返回值
-C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13084): warning C4716: “UnpackedDot”: 必须返回一个值
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13033): warning C4715: “UTF8_to_Unicode”: 不是所有的控件路径都返回值
+C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13084): warning C4716: “UnpackedDot”: 必须返回一个值
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\test.h(13267): warning C4716: “Indentify_TextType”: 必须返回一个值
 C:\Users\10101\Desktop\vsprj\mySegment\mySegement\mySegmentation.c(117): warning C4715: “UniInvercpy”: 不是所有的控件路径都返回值
   mySegement.vcxproj -> C:\Users\10101\Desktop\vsprj\mySegment\Debug\mySegement.exe

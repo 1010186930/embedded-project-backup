@@ -69,7 +69,7 @@ int main(void)
 	u32 fplace=0;
 	u8 *backbuf;
 	char buf[201] = "";
-	u8 gbktest[]="我感到一阵愉悦的颤抖";
+	u8 gbktest[]="，";
 	unsigned short unicode[50] = {0x00};
 	unsigned char cnt;
     HAL_Init();                     //初始化HAL库   
@@ -154,9 +154,10 @@ int main(void)
 	GBKConvertUni(gbktest,unicode);
 	for(i=0;i<sizeof(unicode)/sizeof(u16);i++)
 	{
-		printf("unicode[%d]=%x\r\n",i,unicode[i]);
 		if(unicode[i]==0x00)
 			break;
+		printf("unicode[%d]=%x\r\n",i,unicode[i]);
+		
 	}
 	for(cnt=0;cnt< sizeof(unicode) / sizeof(unsigned short);cnt++)
 	{

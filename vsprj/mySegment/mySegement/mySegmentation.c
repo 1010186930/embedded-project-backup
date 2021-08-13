@@ -439,21 +439,12 @@ int main(void)
 {
 	int cnt = 0;
 	int low, high, baseaddress;
-	char str[] = "南京市长江大桥，重量为12t，举世闻名";
+	char str[] = "我就是冬天。";
 	char str2[50]="";
 	char dot_res[1000] = "";
 	strncpy(str2, str + 4, 1);
 	printf("str2:%s\n", str2);
 	char* pname = (char*)malloc(sizeof(char) * 100);
-	/*unsigned short src_res[100] = { 0x00 };
-	unsigned short dst_res[100] = { 0x00 };
-	unsigned short test[100] = { 0x00 };
-	GBKConvertUni(str, src_res);
-	cnt = Unicnt(src_res);
-	DevideString(dst_res, src_res, cnt);
-	cnt = Unicnt(dst_res);
-	Unidisplay(dst_res, cnt);*/
-	/*unsigned short dst_res[100] = { 0x1000,0x1001,0x1002,0x1003,0x1004,0x1005,0x1006 };*/
 	if (pname == NULL)
 	{
 		printf("allocate error\n");
@@ -471,31 +462,36 @@ int main(void)
 	cnt = Unicnt(dst_res);
 	Unidisplay(dst_res, cnt);
 	unsigned short test[100] = { 0x00 };
-
-	//for (int i = 9; i >= 2; i--)
-	//{
-	//	printf("*******GET %d*******\n", i);
-	//	int offset=UniInvercpy(test, dst_res, i, 4);
-	//	printf("offset:%d\n", offset);
-	//	Unidisplay(test, i);
-	//}
-	/*AddSegSymbol(dst_res, 7, 8);
-	Unidisplay(dst_res, 8);*/
 	int addcnt = DevideString(test, dst_res, cnt);
 	printf("seg add:%d\n", addcnt);
 	cnt = Unicnt(test);
-
 	Unidisplay(test, cnt);
-	
-	/*StringSegment(test, dst_res, cnt);
-	printf("fin");*/
 	free(pname);
 	fclose(pSeg);
 	TwoPloyphonicTranslate(test, cnt, dot_res, two_polyphonic_path);
-	printf("dot res:%s\n", dot_res);
-	/*unsigned short test[100] = { 0x505A,0x4F5C,0x5730,0x8BB4 };
-	
-	int res=StringMatch(test, 4);
-	
-	printf("res:%d\n", res);*/
+	printf("dot len:%d,dot res:%s\n", strlen(dot_res),dot_res);
 }
+//int main(void)
+//{
+//	char* pname = (char*)malloc(sizeof(char) * 100);
+//	unsigned short dst_res[100] = { 0x00 };
+//	int offset=0xa3fe0;
+//	unsigned char unil = 0;
+//	unsigned char unih = 0;
+//	if (pname == NULL)
+//	{
+//		printf("allocate error\n");
+//		return -2;
+//	}
+//	strcpy(pname, danzipath);
+//	pSeg = fopen(pname, "rb");
+//	if (pSeg == (FILE*)NULL)
+//	{
+//		printf("open dict file error\n");
+//		return -2;
+//	}
+//	fseek(pSeg, offset, 0);
+//	fread(dst_res, sizeof(unsigned short), 1, pSeg);
+//	Unidisplay(dst_res, 2);
+//	fclose(pSeg);
+//}
